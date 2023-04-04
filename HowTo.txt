@@ -1,0 +1,50 @@
+Documentation using sphinx rtd theme
+=======================================
+
+Sub-topics, What is ... ?
+---------------------------
+1. Python venv 
+
+2. Sphinx 
+
+3. RTD (Read the Docs) Sphinx theme 
+
+4. reStructuredText (it's a plaintext markup language)
+
+    What is markup ?
+    markup(in general) is just a way of providing functionality above plain text. For example: formatting, links, images etc.
+
+    What is Markdown ?
+
+    1. Markdown is an easy-to-use simplified markup language that is an alternative to using HTML. 
+
+    2. Standard HTML uses tags to surround plain text to specify how that text displays. 
+
+       For example, if you want a line to display as a HEADING 1 the standard syntax is to enclosed the plain text word with HTML tags,<H1>HEADING 1</H1>. 
+       When the text displays in a browser, browsers recognize the HTML tags and display the text as HEADING 1.
+
+       Markdown language simplifies formatting plain text by using keyboard strokes. For example, to display a HEADING 1 the Markdown syntax is to precede the plain text word with the Markdown hash tag #HEADING 1. When the text displays in a browser, browsers recognize the Markdown syntax and display the text as HEADING 1.
+
+
+
+Useful cmds to setup tools & env 
+---------------------------------
+
+1. Setup python venv using python 3.8
+    $ python -m venv <project-name>
+
+2. How to activate and deactivate python virtual environment
+    $ source <venv-abs-path>/bin/activate
+    $ deactivate
+
+3. Install sphinx
+    $ pip install sphinx (after sourcing the venv in step 2)
+
+4. Setup sphinx for project
+    $ mkdir <project-dir>/docs; cd ./docs
+    $ sphinx-quickstart
+
+    Note: Create separate source and build dir when configuring sphinx.
+
+5. Install "Read the Docs" sphinx theme (3rd party theme)
+    $ pip install sphinx_rtd_theme
