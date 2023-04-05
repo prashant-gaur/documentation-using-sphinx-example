@@ -3,9 +3,6 @@ Welcome to Example's documentation!
 
 Landing page for our *Example* project.
 
-Contents
-:ref:`Audio<SectionAudio>`
-
 .. toctree::
    :caption: Embedded System Design
 
