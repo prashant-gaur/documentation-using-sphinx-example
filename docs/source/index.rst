@@ -4,16 +4,16 @@ Welcome to Example's documentation!
 Landing page for our *Example* project.
 
 .. toctree::
-   :caption: Embedded System Design
+   :caption: Workspace ABC
 
-   esd-audio
-
-
-.. toctree::
-   :caption: Finance
+   section-one
+   section-two
 
 .. toctree::
-   :caption: Sports
+   :caption: Workspace XYZ
+
+   section-three
+
 
 Indices and tables
 ==================
