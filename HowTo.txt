@@ -48,3 +48,45 @@ Useful cmds to setup tools & env
 
 5. Install "Read the Docs" sphinx theme (3rd party theme)
     $ pip install sphinx_rtd_theme
+
+6. Create gh-pages branch
+    - Go to Settings --> Pages --> Build and deployment --> Deploy from a branch
+
+7. Setup
+    - git clone https://github.com/prashant-gaur/documentation-using-sphinx-example.git
+    - cd documentation-using-sphinx-example
+    - git fetch orgin gh-pages
+    - git checkout gh-pages
+    - git worktree add --checkout build/html gh-pages
+
+8. Configure `git push` to push both branches
+    - git config remote.origin.push refs/heads/main:refs/heads/main
+    - git config --add remote.origin.push refs/heads/gh-pages:refs/heads/gh-pages
+
+9 After creating static webpages for the first time, push the build/html to remote branch gh-pages using,
+    - git subtree push --prefix build/html origin gh-pages (git subtree push --prefix <rel-folder-location> origin <branch>)
+
+
+
+Useful links
+---------------------------------
+Read-the-Docs wiki - https://sphinx-rtd-theme.readthedocs.io/en/stable/index.html
+
+Deploy using GitHub workflow - https://coderefinery.github.io/documentation/gh_workflow/
+
+Using markdown with Read-the-Docs theme - https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html#using-markdown-with-sphinx
+
+Hexo related links
+---------------------------------
+hexo-theme-icarus - https://github.com/ppoffice/hexo-theme-icarus
+
+Sample logbook using hexo - https://leimao.github.io/
+
+Simple steps to build static website using hexo - https://medium.com/techtofreedom/3-steps-to-build-your-static-website-with-hexo-and-github-pages-9bc9b26a24c2
+
+
+reStructuredText
+----------------------------------
+Primer - https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#directives
+
+Quick reference - https://docutils.sourceforge.io/docs/user/rst/quickref.html
