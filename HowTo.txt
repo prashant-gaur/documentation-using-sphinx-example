@@ -90,3 +90,8 @@ reStructuredText
 Primer - https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#directives
 
 Quick reference - https://docutils.sourceforge.io/docs/user/rst/quickref.html
+
+
+References
+----------------------------------
+https://github.com/Sarcasm/notes/tree/master
